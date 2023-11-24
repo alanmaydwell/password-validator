@@ -69,10 +69,10 @@ def test_has_any_string_method_true_with_fail(test_string):
 
 
 def test_validate_string_with_validators_upper_and_lower():
-    v = validators # just to reduce line length below
+    v = validators  # just to reduce line length below
     assert v.validate_string_with_validators("Ab", (v.has_capital_letter, v.has_lower_case_letter)) is True
 
 
 def test_validate_string_with_validators_underscore_and_number():
-    v = validators # just to reduce line length below
+    v = validators  # just to reduce line length below
     assert v.validate_string_with_validators("Ab", (v.has_underscore, v.has_number)) is False
