@@ -2,7 +2,7 @@ import pytest
 from password_validate import validate_password
 
 
-@pytest.mark.parametrize("password", ["Ab1_zzzzy", "1Aa_1234", "A_1b    "])
+@pytest.mark.parametrize("password", ["Ab1_zzzzy", "1Aa_12345", "A_1b     "])
 def test_password_validate_gives_true_when_password_good(password):
     assert validate_password(password) is True
 

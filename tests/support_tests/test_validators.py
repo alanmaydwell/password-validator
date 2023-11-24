@@ -22,7 +22,7 @@ def test_has_underscore_gives_false_when_underscore_absent(test_string_without_u
 
 @pytest.mark.parametrize("test_string,expected_result", [("", False), ("1", False),
                                                          ("1234567", False),
-                                                         ("12345678", True),
+                                                         ("12345678", False),
                                                          ("123456789", True)])
 def test_string_length_validation(test_string, expected_result):
     assert validators.has_required_length(test_string) == expected_result

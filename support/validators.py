@@ -6,7 +6,7 @@ def has_underscore(mystring: str) -> bool:
     return "_" in mystring
 
 
-def has_required_length(mystring: str, minimum: int = 8) -> bool:
+def has_required_length(mystring: str, minimum: int = 9) -> bool:
     return len(mystring) >= minimum
 
 
