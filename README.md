@@ -13,7 +13,9 @@ Simple password validator created for an exercise.
 The response just confirms whether the password is valid or not but does not give the reason(s) why.
 
 ## Requirements
-Password validator written using just default Python 3.11 without any optional or third-party modules. Although unit tests and linting do require third-party modules which can be installed using the pipfile as described below.
+Password validator written using just default Python 3.11 without any optional or third-party modules. Might not work with earlier versions of Python due to way type-hinting used.
+
+Note the unit tests and linting do require third-party modules which can be installed using the pipfile as described below.
 
 
 ## Unit Tests and Linting
